@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-         <footer className="px-6 pt-8 md:px-16 lg:px-36 w-full text-gray-900">
+         <footer id="footer" className="px-6 pt-8 md:px-16 lg:px-36 w-full text-gray-900">
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
                 <div className="md:max-w-96">
                 <img
@@ -11,14 +11,14 @@ const Footer = () => {
                     src="logo.svg"
                 />
                 <p className="mt-6 text-sm">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book.
+                     Build job-ready resumes in minutes with our AI-powered resume
+                    builder. Tailor each application, track your versions, and stay
+                    one step ahead in every hiring process.
                 </p>
                 
                 </div>
 
-                <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
+                <div className="flex-1 flex items-start justify-center md:justify-end gap-40 md:gap-40">
                 <div>
                     <h2 className="font-semibold mb-5">Company</h2>
                     <ul className="text-sm space-y-2">
