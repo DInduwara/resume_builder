@@ -113,7 +113,7 @@ const Hero = () => {
         role="dialog"
         aria-modal="true"
         className={
-          "fixed inset-0 z-[100] bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 " +
+          "fixed inset-0 z-100 bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 " +
           (mobileOpen ? "translate-x-0" : "-translate-x-full")
         }
       >
@@ -198,7 +198,7 @@ const Hero = () => {
           </span>
         </a>
 
-        <h1 className="mt-6 text-center text-5xl leading-[68px] md:text-6xl md:leading-[80px] font-semibold max-w-4xl text-slate-900">
+        <h1 className="mt-6 text-center text-5xl leading-[68px] md:text-6xl md:leading-20 font-semibold max-w-4xl text-slate-900">
           Create your own resume like a pro.
         </h1>
 
