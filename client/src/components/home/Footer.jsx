@@ -1,51 +1,60 @@
-import React from 'react'
+import React from 'react';
+import { Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-         <footer id="footer" className="px-6 pt-8 md:px-16 lg:px-36 w-full text-gray-900">
-            <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
-                <div className="md:max-w-96">
-                <img
-                    alt=""
-                    className="h-11 w-auto"
-                    src="logo.svg"
-                />
-                <p className="mt-6 text-sm">
-                     Build job-ready resumes in minutes with our AI-powered resume
-                    builder. Tailor each application, track your versions, and stay
-                    one step ahead in every hiring process.
-                </p>
+    <footer className="bg-[#0A0A0A] border-t border-white/5 pt-16 pb-8 text-sm">
+        <div className="container mx-auto px-6 max-w-7xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
                 
+                <div className="col-span-2 md:col-span-1">
+                    <div className="flex items-center gap-2 mb-4 text-white font-bold text-lg">
+                        <div className="size-6 bg-white rounded text-black flex items-center justify-center text-xs">R</div>
+                        ResumeBuilder
+                    </div>
+                    <p className="text-zinc-500 leading-relaxed max-w-xs">
+                        Crafted for professionals who want to stand out. Secure, fast, and AI-powered.
+                    </p>
                 </div>
 
-                <div className="flex-1 flex items-start justify-center md:justify-end gap-40 md:gap-40">
                 <div>
-                    <h2 className="font-semibold mb-5">Company</h2>
-                    <ul className="text-sm space-y-2">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
+                    <h4 className="font-semibold text-white mb-4">Product</h4>
+                    <ul className="space-y-3 text-zinc-500">
+                        <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#templates" className="hover:text-white transition-colors">Templates</a></li>
+                        <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h2 className="font-semibold mb-5">Get in touch</h2>
-                    <div className="text-sm space-y-2">
-                    <p>+1-234-567-890</p>
-                    <p>contact@example.com</p>
-                    </div>
+                    <h4 className="font-semibold text-white mb-4">Resources</h4>
+                    <ul className="space-y-3 text-zinc-500">
+                        <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">Career Guide</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
+                    </ul>
                 </div>
+
+                <div>
+                    <h4 className="font-semibold text-white mb-4">Legal</h4>
+                    <ul className="space-y-3 text-zinc-500">
+                        <li><a href="#" className="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <p className="pt-4 text-center text-sm pb-5">
-                Copyright {new Date().getFullYear()} ©{" "}
-                <a href="https://prebuiltui.com">PrebuiltUI</a>. All Right Reserved.
-            </p>
-            </footer>
+            <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p className="text-zinc-600">© 2026 ResumeBuilder Inc.</p>
+                <div className="flex gap-6 text-zinc-500">
+                    <a href="#" className="hover:text-white transition-colors"><Twitter size={18} /></a>
+                    <a href="#" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
+                    <a href="#" className="hover:text-white transition-colors"><Github size={18} /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
   )
 }
 
-export default Footer
+export default Footer;
